@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo  $id;
       echo '</h5></p> </div>';
           echo '<div class="form-control">
-                <label for="category" ><div class="cat"> <h4>filter :</h4></div></label>
+                <label for="category" ><div class="cat"> <h4>Category :</h4></div></label>
                 <select id="category" name="category">';
                 
                     if ($result->num_rows > 0) {
