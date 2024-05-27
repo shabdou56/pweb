@@ -1,0 +1,112 @@
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(wp3077568.webp) no-repeat center center;
+  background-size: cover;
+}
+
+.container {
+  width: 500px;
+  height: 500px; /* Adjusted to auto to accommodate content */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  border: 2px solid #e6b7eca1;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+h1,
+h4,
+h5 {
+  color: #eee;
+  margin: 0; /* Remove default margins for headers */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px; /* Provide some spacing below the title */
+  font-size: 24px;
+}
+
+.form-control {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  width: 100%; /* Full width of its container */
+  white-space: nowrap; /* Prevent wrapping of text within the label */
+  flex-shrink: 0; /* Prevent the label from shrinking */
+  margin-bottom: 2%; /* Space between each form control group */
+}
+
+.form-control label {
+  margin-right: 5%; /* Add space between the label and the input/textarea/checkbox */
+}
+
+textarea,
+input[type="text"],
+input[type="checkbox"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: transparent;
+  color: aliceblue;
+}
+
+textarea {
+  width: 100%; /* Ensure textarea takes full width */
+  resize: none; /* Disable resizing */
+  overflow-y: auto; /* Add scrollbar when needed */
+  height: 100px; /* Fixed height to encourage scrolling */
+}
+
+button {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #222024;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add space on top for alignment */
+}
+
+button:hover {
+  background-color: #3a373b;
+}
+
+input[type="checkbox"] {
+  margin: 0 10px 0 0; /* Right margin for spacing */
+}
+
+.form {
+  padding: 10px 10px;
+}
+.editButton {
+  background-color: #4cad33;
+}
+.editButton:hover {
+  background-color: #82d66d;
+}
+
+/* Custom style for the checkbox */
+.custom-checkbox {
+  width: 20px; /* Adjust the size of the checkbox */
+  height: 20px; /* Adjust the size of the checkbox */
+  cursor: pointer; /* Changes the cursor on hover, indicating it's clickable */
+  vertical-align: middle; /* Aligns checkbox with text vertically */
+  margin-right: 0px; /* Space between the checkbox and the label text */
+  border-radius: 4px; /* Rounded corners for the checkbox */
+}

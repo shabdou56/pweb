@@ -1,0 +1,151 @@
+/* Body styling for full viewport height, centered content, and a background image */
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(wp3077568.webp) no-repeat center center;
+  background-size: cover;
+}
+
+/* Container styling for centered content with transparent background and blur effect */
+.container {
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Adjusted to stack children vertically */
+  align-items: flex-start;
+  justify-content: flex-start; /* Adjusted to align content to the top */
+  background: transparent;
+  border: 2px solid #e6b7eca1;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+}
+
+.add_cat {
+  width: 50%; /* Or any appropriate width */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center; /* Ensures content aligns to the left */
+}
+
+.add_cat form {
+  width: 100%; /* Ensures the form inside takes the full width of .add_cat */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header style */
+h1 {
+  color: #eee;
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 24px;
+}
+
+/* Form styling for center alignment */
+form {
+  display: flex;
+  width: 100%; /* Ensure the form takes the full width of its container */
+  margin: 0;
+}
+
+/* Input field styling */
+input[type="text"] {
+  flex-grow: 1; /* Takes up all available space */
+  padding: 10px;
+  margin-right: 10px; /* Space between input and button */
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  color: aliceblue;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #222024;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3a373b;
+}
+.container .pre {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+}
+/* Styles the main part of the scrollbar, visible on scroll */
+
+/* Styling for list that will contain tasks */
+ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; /* Keep the ability to scroll */
+  background-color: transparent;
+  padding: 10px;
+  scrollbar-width: none; /* For Firefox */
+}
+
+ul::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and other WebKit browsers */
+}
+
+/* Individual list item styling */
+li {
+  display: flex;
+  justify-content: space-between; /* Align children (desc and actions) on both ends */
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #bcb3b3;
+  background: transparent;
+  backdrop-filter: blur(20px);
+}
+.task-desc {
+  flex-grow: 1; /* Allow description to take up any extra space */
+  overflow: hidden; /* Hide text that overflows the div's bounds */
+  text-overflow: ellipsis; /* Add ellipsis when the text overflows */
+  white-space: nowrap; /* Keep text in a single line */
+  color: #eee;
+}
+
+.task-actions {
+  flex-shrink: 0; /* Prevent this container from shrinking */
+  display: flex; /* Align buttons next to each other */
+}
+
+/* Container for title with centered alignment */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.delete {
+  background-color: red;
+}
+.delete:hover {
+  background-color: #e65757;
+}
